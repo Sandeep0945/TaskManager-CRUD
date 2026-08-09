@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="w-full min-h-screen text-[#f1e9ff] bg-[#12121f]">
+    <div class="w-full"> 
+
+        <!-- Navbar -->
+
+        <div class="navbar h-20 text-center justify-between px-8 flex items-center bg-[#1a1a2e] border-b border-[#3a2f5c]">
+            <h1 class="text-4xl font-bold text-[#f1e9ff]">📝 My Tasks</h1>
+
+            <!-- Profile icon: shows first letter of user's name -->
+            <button id="profileBtn" class="h-11 w-11 rounded-full bg-[#a855f7] text-[#12121f] font-bold text-lg flex items-center justify-center hover:bg-[#c084fc] transition">
+                <span id="avatarLetterNav">U</span>
+            </button>
+        </div>
+
+        <div id="taskcontainer" class="flex flex-wrap gap-8 p-8">
+            <!-- JS-generated cards go here -->
+        </div>
+    </div>
+ 
+    <!-- Overlay -->
+    <div id="profileOverlay" class="hidden fixed inset-0 bg-black/50 z-40"></div>
+
+    <!-- Slide-in Profile Panel -->
+    <div id="profilePanel" class="fixed top-0 right-0 h-full w-80 bg-[#1a1a2e] border-l border-[#3a2f5c] z-50 translate-x-full transition-transform duration-300 flex flex-col p-6">
+        <button id="closeProfileBtn" class="self-end text-[#f1e9ff]/70 hover:text-[#f1e9ff] text-2xl leading-none">&times;</button>
+
+        <div class="flex flex-col items-center mt-6">
+            <div class="h-20 w-20 rounded-full bg-[#a855f7] text-[#12121f] font-bold text-3xl flex items-center justify-center">
+                <span id="avatarLetter">U</span>
+            </div>
+            <h2 id="profileName" class="mt-4 text-xl font-semibold text-[#f1e9ff]">User Name</h2>
+            <p id="profileEmail" class="mt-1 text-sm text-[#f1e9ff]/70">user@email.com</p>
+        </div>
+
+        <button id="logoutBtn" class="mt-auto w-full py-2.5 rounded-full bg-[#a855f7]/20 text-[#a855f7] border border-[#a855f7] font-medium hover:bg-[#a855f7]/30 transition">
+            Logout
+        </button>
+    </div>
+
+    <script src="../DashBoard/dashboard.js"></script>
+</body>
+</html>

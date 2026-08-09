@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Task</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen w-full bg-[#12121f] text-white">
+    <div
+        class="flex flex-col items-center gap-6 py-10 px-8 rounded-3xl w-[90%] max-w-md bg-[#1a1a2e] border border-[#3a2f5c] shadow-2xl">
+
+        <!-- Heading -->
+        <h1 class="text-4xl text-[#f1e9ff] font-bold text-center">Create Task</h1>
+
+        <!-- Title -->
+        <input
+            id="title"class="w-full outline-none focus:ring-2 focus:ring-[#a855f7] border border-[#3a2f5c] rounded-2xl text-[#f1e9ff] bg-[#12121f] p-3 placeholder:text-[#f1e9ff]/40 transition"type="text" placeholder="Enter Title">
+
+        <!-- Description -->
+        <textarea
+            id="text" class="w-full h-32 resize-none outline-none focus:ring-2 focus:ring-[#a855f7] border border-[#3a2f5c] rounded-2xl text-[#f1e9ff] bg-[#12121f] p-3 placeholder:text-[#f1e9ff]/40 transition" placeholder="Enter Description"
+        ></textarea>
+
+        <!-- Create Button -->
+        <button id="createbtn" class="w-40 py-2.5 rounded-full bg-[#a855f7] text-[#12121f] font-semibold hover:bg-[#c084fc] transition duration-300shadow-lg shadow-purple-500/20">Create</button>
+
+        <!-- Read All Tasks -->
+        <a href="../DashBoard/dashboard.html"class="w-44 py-2.5 rounded-full bg-[#a855f7]/20 text-[#a855f7] border border-[#a855f7] font-medium text-center hover:bg-[#a855f7]/30 transition duration-300">Read All Tasks</a>
+
+    </div>
+
+    <script src="../CreateTask/task.js"></script>
+</body>
+</html>

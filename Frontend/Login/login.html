@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Your Account</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex flex-col items-center justify-center bg-[#12121f] h-screen w-full text-[#f1e9ff]">
+
+    <div class="gap-6 flex flex-col items-center py-12 rounded-4xl w-[90%] max-w-md shadow-2xl shadow-[0_0_25px_rgba(168,85,247,0.15)] bg-[#1a1a2e] backdrop-blur-lg border border-[#3a2f5c]">
+
+        <h1 class="mt-14 text-4xl text-[#f1e9ff] font-bold text-center">Login Your Account</h1>
+
+        <input id="email" class="w-90 outline-none focus:ring-[#a855f7] focus:ring-2 rounded-3xl text-center text-[#f1e9ff] bg-[#12121f] border border-[#3a2f5c] placeholder:text-[#f1e9ff]/50 p-2" type="email" placeholder="Enter Your Email">
+
+        <input id="password" class="w-90 outline-none focus:ring-[#a855f7] focus:ring-2 rounded-3xl text-center text-[#f1e9ff] bg-[#12121f] border border-[#3a2f5c] placeholder:text-[#f1e9ff]/50 p-2" type="password" placeholder="Enter Your Password">
+
+        <button id="loginbtn" class="w-32 p-1.5 rounded-full transition duration-300 bg-[#a855f7] text-[#12121f] font-medium hover:bg-[#c084fc]">Login</button>
+
+        <p class="text-[#f1e9ff]/70">Don't have an account? <a href="../SignUp/signup.html" class="text-[#a855f7] hover:text-[#c084fc] hover:underline">Sign Up</a></p>
+
+    </div>
+    <script src="../Login/login.js"></script>
+</body>
+</html>
