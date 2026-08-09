@@ -117,10 +117,6 @@ TASK-CRUD/
 - [ ] Single-task fetch endpoint (`GET /api/task/:id`) for faster edit loading
 - [ ] Deploy live demo
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ---
 
 Built by Sandeep — feel free to fork and improve!
